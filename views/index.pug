@@ -1,10 +1,18 @@
 doctype html
 html
 	head
-		title="login Google"
+		meta(charset="UTF-8")
+		title Google Authorization
+		style
+			include ./index.css
 	body
-		div
-			h1 Welcom to Google site. 
-			h2 Log in to Your better site. 
-		form(action='/auth/google', method='GET')
-			button(type='submit') Login
+		div.form
+			h3 Log in.
+			form(action='http://localhost:3000/auth/google', method: 'GET')
+				p.Login
+					| Enter your login:
+					input.text(type='text', name='login')
+				p.Password
+					| Enter your password:
+					input.text(type='password', name='password')
+				button(type='submit') Login
