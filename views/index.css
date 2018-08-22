@@ -8,3 +8,7 @@ body {
 h1 {
     padding: 50px;
 }
+
+button {
+	width: 150px;
+}
